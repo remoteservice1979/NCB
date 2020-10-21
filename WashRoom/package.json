@@ -1,0 +1,29 @@
+{
+  "name": "parcel-react-example",
+  "description": "Simple React example",
+  "version": "1.0.0",
+  "main": "src/index.html",
+  "license": "MIT",
+  "scripts": {
+    "start": "parcel src/index.html --open",
+    "build": "parcel build src/index.html",
+    "predeploy": "parcel build src/index.html --public-url /tabs",
+    "deploy": "gh-pages -d dist"
+  },
+  "dependencies": {
+    "@bumaga/tabs": "0.2.0",
+    "@restart/hooks": "^0.3.8",
+    "bootstrap": "^4.5.3",
+    "framer-motion": "^1.2.3",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
+    "react-router-dom": "^5.2.0",
+    "reactstrap": "^8.6.0"
+  },
+  "devDependencies": {
+    "@babel/core": "7.11.6",
+    "@babel/preset-react": "7.10.4",
+    "gh-pages": "2.2.0",
+    "parcel-bundler": "1.12.4"
+  }
+}
